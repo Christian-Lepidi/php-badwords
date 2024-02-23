@@ -2,7 +2,7 @@
  $user_paragraph = $_GET["paragraph"];
  $user_paragraph_length = strlen($user_paragraph);
  $user_censure = $_GET["censure"];
- $user_censure_word = str_replace("esercizio","***", $user_paragraph);
+ $user_censure_word = str_replace($user_censure,"***", $user_paragraph);
 ?>
 
 <!DOCTYPE html>
