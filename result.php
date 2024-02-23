@@ -1,5 +1,6 @@
 <?php
  $user_paragraph = $_GET["paragraph"];
+ $user_paragraph_length = strlen($user_paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -13,5 +14,8 @@
    <h1>
     <?php echo $user_paragraph ?>
    </h1> 
+   <span>
+    <?php echo $user_paragraph_length ?>
+   </span>
 </body>
 </html>
