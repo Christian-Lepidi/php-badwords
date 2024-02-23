@@ -1,6 +1,8 @@
 <?php
  $user_paragraph = $_GET["paragraph"];
  $user_paragraph_length = strlen($user_paragraph);
+ $user_censure = $_GET["censure"];
+ $user_censure_word = str_replace("esercizio","***", $user_paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -17,5 +19,8 @@
    <span>
     <?php echo $user_paragraph_length ?>
    </span>
+   <h2>
+   <?php echo $user_censure_word ?>
+   </h2>
 </body>
 </html>
